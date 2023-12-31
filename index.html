@@ -1,32 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <title>Kesit Budi Kusumo website</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="description" content="This is a website owned by Kesit Budi Kusumo, a mainly-focused backend developer, using Java as his primary tool to build magnificent apps."/>
-    <meta name="keywords" content="Kesit Budi Kusumo personal website"/>
-    <meta name="copyright" content="(C) Kesit Budi Kusumo"/>
-    <link rel="icon" href="favicon.ico"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kesit Kernel ~ Personal Website 😊</title>
+    <link rel="stylesheet" href="/assets/css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css"/>
 </head>
-<body bgcolor=#000000 text=#dfe7e7 link=#ffff00>
-    <center>
-        <img align="middle" src="assets/images/kesit-kernel-id-logo.png" border=0 alt="Kesit Budi Kusumo"/>
-        <h1>Hello | Halo | नमस्ते | Ciao | مرحبًا | Bonjour</h1>
-    </center>
-    <p align="right"><em>Created at: October 22, 2023</em></p>
-    <br/>
+<body>
+<!--Header-->
+<header class="header" id="header">
+    <nav class="nav container padded-container">
+        <!--Logo-->
+        <a href="#" class="nav__logo">
+            <span>Kesit</span>
+            <span>Kernel</span>
+        </a>
 
-    <hr/>
+        <!--Top Bar-->
+        <div class="nav__menu" id="nav-menu">
+            <!--Navigation Menu-->
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="/" class="nav__link active-link">
+                        <span>01</span>
+                        Home
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://github.com/kusumo1920" target="_blank" class="nav__link">
+                        <span>02</span>
+                        Projects
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://www.linkedin.com/in/kesit-budi-kusumo/" target="_blank" class="nav__link">
+                        <span>03</span>
+                        Linkedin
+                    </a>
+                </li>
+            </ul>
 
-    <h2>What is this?</h2>
-    <p>Well, this is a website of mine, which ends in *.kernel.id like my other websites I own. But this one, is my <strong>personal</strong> website.</p>
-    <p>If you're interested in my projects that are hosted in different subdomains, please take a look at <a href="/projects">projects page</a>.</p>
+            <!--CTA Buttons-->
+            <div class="nav__buttons">
+                <a href="#contact-me-section" class="hire-me-button">
+                    Hire Me :)
+                    <span>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </span>
+                </a>
+            </div>
 
-    <hr/>
+            <!--Close Button-->
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
 
-    <h2>A little bit of me</h2>
-    <p>I am a software engineer with 2 years of experience in web development. I am proficient in Java, JavaScript, TypeScript, Java, and SQL. I have a strong track record of developing scalable and user-friendly applications. I am currently working at Shopee Indonesia, where I have led the development of several successful projects. I am a highly motivated and results-oriented individual with a passion for software development.</p>
+        <!--Navigation Toggle Button-->
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+</header>
 
+<!--Main-->
+<main class="main">
+    <section id="intro-section" class="section container padded-container">
+        <h1 class="section__title">
+            <span>Hey,</span>
+            <span>I'm Kesit</span>
+        </h1>
+
+        <h2 class="section__subtitle">
+            — a Mandirian & Ex-Shopee Software Engineer, specialize in building fullstack apps from ground up.
+        </h2>
+
+        <img src="/assets/images/self-picture.jpg" alt="Kesit Budi Kusumo Picture" class="self-picture-image">
+    </section>
+
+    <section id="story-section" class="section container padded-container">
+        <p class="section__text_content_regular">
+            I’ve spent a couple of years creating software and obsessing over what makes them fly. Currently, I work
+            <span class="underlined-text">at Bank Mandiri as Java Backend Engineer</span> in a Small Medium Enterprise Department.
+        </p>
+
+        <p class="section__text_content_bold">
+            Aside from working at office, I can do fullstack freelance job remotely as well.
+        </p>
+
+        <p class="section__text_content_regular">
+            I focus on early-stage design — taking a brand from zero to one. My work helps companies make strategic
+            decisions in their foundational stages and leverage their position in the market. <span class="underlined-text">If you need enhancement of
+            existing project</span>, no worries 😎 I'm interested to work with you.
+        </p>
+    </section>
+
+    <section id="expectation-section" class="section container padded-container">
+        <h2 class="section__title">
+            Here's what you can expect from me...
+        </h2>
+
+        <div class="expectation__grid">
+            <div class="expectation__item">
+                I'll bring great, responsive and fresh looking web design you choose.
+            </div>
+            <div class="expectation__item">
+                Recognise potential — pushing brands to become better than you ever thought possible.
+            </div>
+            <div class="expectation__item">
+                Provide wide range of features to your customer with enhancement of existing app.
+            </div>
+            <div class="expectation__item">
+                Giving you the foundations to scale — from advisory to maintainable finished product.
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-me-section" class="section container padded-container">
+        <p class="section__text_content_regular">
+            As for now, I've lived and worked in Indonesia - Jakarta city.
+        </p>
+
+        <p class="section__text_content_regular">
+            Ready to roll? Send me a request to my inbox below.
+        </p>
+
+        <p class="section__text_content_bold">
+            <span><i class="ri-mail-send-line"></i></span>
+            kesit@kernel.id
+        </p>
+    </section>
+</main>
+
+<footer class="footer">
+    © Kesit Budi Kusumo — your digital transformation partner <span><i class="ri-shake-hands-line"></i></span>
+</footer>
+
+<script src="https://app.embed.im/snow.js" defer></script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>
