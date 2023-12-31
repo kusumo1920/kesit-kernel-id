@@ -13,6 +13,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
+const navLinks = document.querySelectorAll('.nav__link');
+const hireMeButton = document.getElementById('hire-me-button');
 
 if (navToggle) {
     navToggle.addEventListener('click', () => {
@@ -25,3 +27,15 @@ if (navClose) {
         navMenu.classList.remove('show-menu');
     });
 }
+
+if (hireMeButton) {
+    hireMeButton.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu');
+    })
+}
+
+navLinks.forEach((navLink) => {
+   navLink.addEventListener('click', () => {
+       navMenu.classList.remove('show-menu');
+   });
+});
